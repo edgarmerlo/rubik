@@ -4,16 +4,15 @@ import './index.css';
 import App from './App';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import cubeReducer from './reducers'
+import { cubeReducer } from './reducers'
 import * as serviceWorker from './serviceWorker';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-let store = createStore(cubeReducer);
+const store = createStore(cubeReducer, composeWithDevTools());
 
 ReactDOM.render(
   <Provider store={store}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   </Provider>,
   document.getElementById('root')
 );

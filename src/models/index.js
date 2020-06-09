@@ -10,13 +10,13 @@ export const renderFaces = () => {
   return cube;
 }
 
-const rowMove = [0,1,2,3];
-const colMove = [1,3,4,5];
+export const rowMove = [0,1,2,3];
+export const colMove = [1,3,4,5];
 
-const row1 = [0, 1, 2];
-const row2 = [3, 4, 5];
-const row3 = [6, 7, 8];
+export const row1 = [0, 1, 2];
+export const row2 = [3, 4, 5];
+export const row3 = [6, 7, 8];
 
-const col1 = [0, 3, 6];
-const col2 = [1, 4, 7];
-const col3 = [2, 5, 8];
+export const col1 = [0, 3, 6];
+export const col2 = [1, 4, 7];
+export const col3 = [2, 5, 8];

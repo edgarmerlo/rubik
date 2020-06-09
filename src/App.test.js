@@ -1,9 +1,6 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import { renderFaces } from './models';
 
 test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const cube = renderFaces();
+  expect(cube[0][1]).toBe('#0f0');
 });
